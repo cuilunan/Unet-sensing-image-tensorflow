@@ -5,11 +5,15 @@
   数据集：主要采用的landsat多通道图像，根据美国官方网站提供的地物标签制作卫星图像的groundTruth,得到23000多张训练图像，每张224×224
 美国卫星数据官网：https://nassgeodata.gmu.edu/CropScape/
 
-  代码：基于Unet的网络结构，参考keras代码修改为tensorflow版本，其中process.py是制作训练数据用的，将一张7000×8000的大卫星图片根据经纬度分割成2万多张224×224的小卫星图和相应的groundTruth.
+  代码：基于Unet的网络结构，使用tensorflow框架实现，其中process.py是制作训练数据用的，将一张7000×8000的大卫星图片根据经纬度分割成2万多张224×224的小卫星图和相应的groundTruth.
+  
+  训练可视化：使用tensorboard可视化训练过程，命令行运行 tensorboard --logdir="logs(使用filewriter的存储路径)"
+  实验环境：ubuntu16.04，python2.7，8G gpu显存，训练时间为18小时
 
   数据量过大，如果有需要数据的朋友，可以联系我，qq:153323967
 
   groundTruth:
+  
   ![error](https://github.com/cuilunan/Unet-of-remote-sensing-image/raw/master/result/groundTruth.png)
   
   input_image:
