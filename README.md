@@ -10,7 +10,6 @@
   训练可视化：使用tensorboard可视化训练过程，命令行运行 tensorboard --logdir="logs(使用filewriter的存储路径)"
   实验环境：ubuntu16.04，python2.7，8G gpu显存，训练时间为18小时
 
-  数据量过大，如果有需要数据的朋友，可以联系我，qq:153323967
 
   groundTruth:
   
